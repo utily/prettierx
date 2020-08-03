@@ -233,6 +233,20 @@ Break method chains with more than 3 method calls, like Prettier 1.x.
 | Default | CLI Override                 | API Override                    |
 | ------- | ---------------------------- | ------------------------------- |
 | `false` | `--break-long-method-chains` | `breakLongMethodChains: <bool>` |
+## Break before statement
+
+Puts a hard break before single, non-block statement following: `if`, `else`, `with`, `for`, `for await`, `for each`, `do` and `while`.
+
+Valid options:
+
+- `"never"` - Only insert a soft break.
+- `"conditionals"` - Only insert hard break following conditionals: `if`, `else` and `with`.
+- `"loops"` - Only insert hard break following loops: `for`, `for await`, `for each`, `do` and `while`.
+- `"always"` - Insert a hard break for all of cases.
+
+| Default   | CLI Override               | API Override                    |
+| --------- | -------------------------- | ------------------------------- |
+| `"never"` | <code>--break-before-statement <never&#124;conditionals&#124;loops&#124;always></code> | <code>breakBeforeStatement: "<never&#124;conditionals&#124;loops&#124;always>"</code> |
 
 ## Space before function parentheses
 

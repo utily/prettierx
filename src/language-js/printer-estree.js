@@ -499,10 +499,17 @@ function printPathNoParens(path, options, print, args) {
         // [prettierx] --space-in-parens option support (...)
         insideSpace,
         ")",
-        adjustClause(node.body, print("body")),
+        adjustClause(node.body, print("body"),
+        // [prettierx] --break-before-statement option support (...)
+        options.breakBeforeStatement === "always" ||
+        options.breakBeforeStatement === "conditionals"),
       ]);
     case "IfStatement": {
-      const con = adjustClause(node.consequent, print("consequent"));
+      const con = adjustClause(node.consequent, print("consequent"),
+      // [prettierx] --break-before-statement option support (...)
+      options.breakBeforeStatement === "always" ||
+      options.breakBeforeStatement === "conditionals"
+      );
       const opening = group([
         "if (",
         // [prettierx] --space-in-parens option support (...)
@@ -542,6 +549,9 @@ function printPathNoParens(path, options, print, args) {
             adjustClause(
               node.alternate,
               print("alternate"),
+              // [prettierx] breakBeforeStatement option support
+              options.breakBeforeStatement === "always" ||
+                options.breakBeforeStatement === "conditionals",
               node.alternate.type === "IfStatement"
             )
           )
@@ -551,7 +561,10 @@ function printPathNoParens(path, options, print, args) {
       return parts;
     }
     case "ForStatement": {
-      const body = adjustClause(node.body, print("body"));
+      const body = adjustClause(node.body, print("body"),
+      // [prettierx] breakBeforeStatement option support
+      options.breakBeforeStatement === "always" ||
+        options.breakBeforeStatement === "loops");
 
       // We want to keep dangling comments above the loop to stay consistent.
       // Any comment positioned between the for statement and the parentheses
@@ -598,7 +611,10 @@ function printPathNoParens(path, options, print, args) {
         // [prettierx] --space-in-parens option support (...)
         group([indent([innerLineBreak, print("test")]), innerLineBreak]),
         ")",
-        adjustClause(node.body, print("body")),
+        adjustClause(node.body, print("body"),
+        // [prettierx] breakBeforeStatement option support
+        options.breakBeforeStatement === "always" ||
+          options.breakBeforeStatement === "loops"),
       ]);
     case "ForInStatement":
       // [prettierx] --space-in-parens option support (...)
@@ -612,7 +628,10 @@ function printPathNoParens(path, options, print, args) {
         // [prettierx] --space-in-parens option support (...)
         insideSpace,
         ")",
-        adjustClause(node.body, print("body")),
+        adjustClause(node.body, print("body"),
+        // [prettierx] breakBeforeStatement option support
+        options.breakBeforeStatement === "always" ||
+          options.breakBeforeStatement === "loops"),
       ]);
 
     case "ForOfStatement":
@@ -629,11 +648,17 @@ function printPathNoParens(path, options, print, args) {
         // [prettierx] --space-in-parens option support (...)
         insideSpace,
         ")",
-        adjustClause(node.body, print("body")),
+        adjustClause(node.body, print("body"),
+        // [prettierx] breakBeforeStatement option support
+        options.breakBeforeStatement === "always" ||
+          options.breakBeforeStatement === "loops"),
       ]);
 
     case "DoWhileStatement": {
-      const clause = adjustClause(node.body, print("body"));
+      const clause = adjustClause(node.body, print("body"),
+      // [prettierx] breakBeforeStatement option support
+      options.breakBeforeStatement === "always" ||
+        options.breakBeforeStatement === "loops");
       const doBody = group(["do", clause]);
       parts = [doBody];
 
@@ -827,7 +852,8 @@ function printPathNoParens(path, options, print, args) {
     default:
       /* istanbul ignore next */
       throw new Error("unknown type: " + JSON.stringify(node.type));
-  }
+
+
 }
 
 function printDirective(node, options) {
