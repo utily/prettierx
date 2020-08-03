@@ -19,6 +19,7 @@ jobs:
     # ref:
     # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix
     runs-on: ${{ matrix.os }}
+    if: "!contains(github.event.head_commit.message, 'ci: version bump to ')"
 
     strategy:
       matrix:

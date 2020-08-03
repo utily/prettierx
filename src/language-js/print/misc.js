@@ -2,7 +2,7 @@
 
 const { isNonEmptyArray } = require("../../common/util");
 const {
-  builders: { indent, join, line },
+  builders: { indent, join, line, hardline },
 } = require("../../document");
 const { isFlowAnnotationComment } = require("../utils");
 
@@ -73,8 +73,8 @@ function printTypeScriptModifiers(path, options, print) {
   }
   return [join(" ", path.map(print, "modifiers")), " "];
 }
-
-function adjustClause(node, clause, forceSpace) {
+// [prettierx] breakBeforeStatement option
+function adjustClause(node, clause, hardBreak, forceSpace) {
   if (node.type === "EmptyStatement") {
     return ";";
   }
@@ -82,8 +82,8 @@ function adjustClause(node, clause, forceSpace) {
   if (node.type === "BlockStatement" || forceSpace) {
     return [" ", clause];
   }
-
-  return indent([line, clause]);
+  // [prettierx] breakBeforeStatement option
+  return indent([hardBreak ? hardline : line, clause]);
 }
 
 function printRestSpread(path, options, print) {

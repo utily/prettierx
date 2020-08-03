@@ -68,6 +68,9 @@ Format options:
                            Defaults to always.
   --break-before-else      Always add a line break before else.
                            Defaults to false.
+  --break-before-statement <never|conditionals|loops|always>
+                           Always add line breaks before statement following if, else, with, for, for each, while and do.
+                           Defaults to never.
   --break-long-method-chains
                            Break method chains with more than 3 method calls, like Prettier 1.x.
                            Defaults to false.
@@ -285,6 +288,9 @@ Format options:
                            Defaults to always.
   --break-before-else      Always add a line break before else.
                            Defaults to false.
+  --break-before-statement <never|conditionals|loops|always>
+                           Always add line breaks before statement following if, else, with, for, for each, while and do.
+                           Defaults to never.
   --break-long-method-chains
                            Break method chains with more than 3 method calls, like Prettier 1.x.
                            Defaults to false.

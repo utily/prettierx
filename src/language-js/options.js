@@ -194,6 +194,31 @@ module.exports = {
     description:
       "Break method chains with more than 3 method calls, like Prettier 1.x.",
   },
+  breakBeforeStatement: {
+    category: CATEGORY_JAVASCRIPT,
+    type: "choice",
+    default: "never",
+    description:
+      "Always add line breaks before statement following if, else, with, for, for each, while and do.",
+    choices: [
+      {
+        value: "never",
+        description: "never add hard break",
+      },
+      {
+        value: "conditionals",
+        description: "only after if, else and with",
+      },
+      {
+        value: "loops",
+        description: "only after for, for each, while and do",
+      },
+      {
+        value: "always",
+        description: "add hard break",
+      },
+    ],
+  },
   singleQuote: commonOptions.singleQuote,
   jsxSingleQuote: {
     since: "1.15.0",

@@ -14,6 +14,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
+    if: "!contains(github.event.head_commit.message, 'ci: version bump to ')"
     strategy:
       fail-fast: false
       matrix:
