@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -26,10 +26,12 @@
+                             Always add line breaks before statement following if, else, with, for, for each, while and do.
+                             Defaults to never.
+    --end-of-line <lf|crlf|cr|auto>
+                             Which end of line characters to apply.
+                             Defaults to lf.
++   --foo-option <bar|baz>   foo description
++                            Defaults to bar.
+    --generator-star-spacing Add spaces around the star ('*') in generator functions (before and after - from eslint).
+                             Defaults to false.
+    --html-whitespace-sensitivity <css|strict|ignore>
+                             How to handle whitespaces in HTML.
+                             Defaults to css."
+`;
+
+exports[`show detailed external option with \`--help foo-option\` (stderr) 1`] = `""`;
+
+exports[`show detailed external option with \`--help foo-option\` (stdout) 1`] = `
+"--foo-option <bar|baz>
+
+  foo description
+
+Valid options:
+
+  bar   bar description
+  baz   baz description
+
+Default: bar
+"
+`;
+
+exports[`show detailed external option with \`--help foo-option\` (write) 1`] = `Array []`;

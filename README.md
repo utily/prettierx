@@ -30,6 +30,7 @@ prettierx <options> <file(s)>
 - `--yield-star-spacing` (`yieldStarSpacing: true`): Put spaces around the star (`*`) in `yield*` expressions (before and after - similar to the corresponding eslint option). (Default is after only.)
 - `--no-indent-chains` (`indentChains: false`): Disable indents at the start of chained calls.
 - `--break-before-else` (`breakBeforeElse: true`): Always add a line break before else.
+- `--break-before-statement` (`breakBeforeStatement: false`): Always add a line break before statement following if, else, which, for, for await, for each, do, and while.
 - <code>--import-formatting <auto&#124;oneline></code> (<code>importFormatting: "<auto&#124;oneline>"</code>): Formatting of import statements, may be `oneline` to avoid conflict with VSCode "Organize Imports" feature.
 - `--html-void-tags` (`htmlVoidTags: true`): Format void HTML elements as void tags.
 - `--break-long-method-chains` (`breakLongMethodChains: true`): Break method chains with more than 3 method calls, like Prettier 1.x.
@@ -47,6 +48,7 @@ prettierx <options> <file(s)>
 - `--no-graphql-curly-spacing` (`graphqlCurlySpacing: false`): Disable spaces between curly braces for GraphQL.
 - `--no-yaml-bracket-spacing` (`yamlBracketSpacing: false`): Disable spaces between brackets / curly braces for YAML.
 - `--no-type-curly-spacing` (`typeCurlySpacing: false`): Disable spaces between type curly braces.
+
 
 (See [`docs/options.md`](docs/options.md) for more information.)
 
