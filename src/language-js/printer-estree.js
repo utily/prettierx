@@ -853,7 +853,7 @@ function printPathNoParens(path, options, print, args) {
       /* istanbul ignore next */
       throw new Error("unknown type: " + JSON.stringify(node.type));
 
-
+  }
 }
 
 function printDirective(node, options) {
@@ -909,4 +909,4 @@ module.exports = {
     remaining: handleComments.handleRemainingComment,
   },
   getCommentChildNodes: handleComments.getCommentChildNodes,
-};
+}
