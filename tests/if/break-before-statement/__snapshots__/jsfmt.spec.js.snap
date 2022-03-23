@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`if.js 1`] = `
+exports[`if.js - {"breakBeforeStatement":"always"} format 1`] = `
 ====================================options=====================================
-breakBeforeStatement: "conditionals"
+breakBeforeStatement: "always"
 parsers: ["babel"]
 printWidth: 80
                                                                                 | printWidth
@@ -31,9 +31,9 @@ for (const key in { p: 1 })
 ================================================================================
 `;
 
-exports[`if.js 2`] = `
+exports[`if.js - {"breakBeforeStatement":"conditionals"} format 1`] = `
 ====================================options=====================================
-breakBeforeStatement: "always"
+breakBeforeStatement: "conditionals"
 parsers: ["babel"]
 printWidth: 80
                                                                                 | printWidth

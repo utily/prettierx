@@ -79,7 +79,7 @@
     "mem": "8.1.1",
     "meriyah": "4.1.5",
     "minimatch": "3.0.4",
-    "minimist": "1.2.5",
+    "minimist": "1.2.6",
     "n-readlines": "1.0.1",
     "outdent": "0.8.0",
     "parse-srcset": "github:ikatyang/parse-srcset#master",

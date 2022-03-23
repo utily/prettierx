@@ -1,34 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`while.js 1`] = `
-====================================options=====================================
-breakBeforeStatement: "loops"
-parsers: ["babel"]
-printWidth: 80
-                                                                                | printWidth
-=====================================input======================================
-while (true) if (true) break
-
-while (true) { if (true) break }
-
-while (true) { console.log("test") }
-
-=====================================output=====================================
-while (true)
-  if (true) break;
-
-while (true) {
-  if (true) break;
-}
-
-while (true) {
-  console.log("test");
-}
-
-================================================================================
-`;
-
-exports[`while.js 2`] = `
+exports[`while.js - {"breakBeforeStatement":"always"} format 1`] = `
 ====================================options=====================================
 breakBeforeStatement: "always"
 parsers: ["babel"]
@@ -49,6 +21,34 @@ while (true)
 while (true) {
   if (true)
     break;
+}
+
+while (true) {
+  console.log("test");
+}
+
+================================================================================
+`;
+
+exports[`while.js - {"breakBeforeStatement":"loops"} format 1`] = `
+====================================options=====================================
+breakBeforeStatement: "loops"
+parsers: ["babel"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+while (true) if (true) break
+
+while (true) { if (true) break }
+
+while (true) { console.log("test") }
+
+=====================================output=====================================
+while (true)
+  if (true) break;
+
+while (true) {
+  if (true) break;
 }
 
 while (true) {

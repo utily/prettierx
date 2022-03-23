@@ -60,7 +60,7 @@ exports[`show external options with \`--help\` 1`] = `
 - First value
 + Second value
 
-@@ -36,10 +36,12 @@
+@@ -39,10 +39,12 @@
     --end-of-line <lf|crlf|cr|auto>
                              Which end of line characters to apply.
                              Defaults to lf.
@@ -73,7 +73,7 @@ exports[`show external options with \`--help\` 1`] = `
     --no-graphql-curly-spacing
                              Do not put spaces between curly braces for GraphQL.
     --html-void-tags         Format void HTML elements as void tags.
-@@ -60,11 +62,11 @@
+@@ -63,11 +65,11 @@
     --no-object-curly-spacing
                              Disable spaces between object curly braces.
     --offset-ternary-expressions

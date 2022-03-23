@@ -1,39 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`with.js 1`] = `
-====================================options=====================================
-breakBeforeStatement: "conditionals"
-parsers: ["babel"]
-printWidth: 80
-                                                                                | printWidth
-=====================================input======================================
-with (0) 1
-
-with (0) { 1 }
-
-with (0) while (true) 1
-
-while (true) with (0) 1
-
-=====================================output=====================================
-with (0)
-  1;
-
-with (0) {
-  1;
-}
-
-with (0)
-  while (true) 1;
-
-while (true)
-  with (0)
-    1;
-
-================================================================================
-`;
-
-exports[`with.js 2`] = `
+exports[`with.js - {"breakBeforeStatement":"always"} format 1`] = `
 ====================================options=====================================
 breakBeforeStatement: "always"
 parsers: ["babel"]
@@ -59,6 +26,39 @@ with (0) {
 with (0)
   while (true)
     1;
+
+while (true)
+  with (0)
+    1;
+
+================================================================================
+`;
+
+exports[`with.js - {"breakBeforeStatement":"conditionals"} format 1`] = `
+====================================options=====================================
+breakBeforeStatement: "conditionals"
+parsers: ["babel"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+with (0) 1
+
+with (0) { 1 }
+
+with (0) while (true) 1
+
+while (true) with (0) 1
+
+=====================================output=====================================
+with (0)
+  1;
+
+with (0) {
+  1;
+}
+
+with (0)
+  while (true) 1;
 
 while (true)
   with (0)
