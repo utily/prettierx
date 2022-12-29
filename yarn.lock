@@ -1640,11 +1640,6 @@
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.7.tgz"
   "version" "7.0.7"
 
-"@types/json5@^0.0.29":
-  "integrity" "sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ=="
-  "resolved" "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
-  "version" "0.0.29"
-
 "@types/node@*":
   "integrity" "sha512-um/+/ip3QZmwLfIkWZSNtQIJNVAqrJ92OkLMeuZrjZMTAJniI7fh8N8OICyDhAJ2mzgk/fmYFo72jRr5HyZ1EQ=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-15.14.0.tgz"
@@ -2120,13 +2115,13 @@
     "graceful-fs" "^4.2.4"
     "slash" "^3.0.0"
 
-"babel-loader@8.2.2":
-  "integrity" "sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g=="
-  "resolved" "https://registry.npmjs.org/babel-loader/-/babel-loader-8.2.2.tgz"
-  "version" "8.2.2"
+"babel-loader@^8.3.0":
+  "integrity" "sha512-H8SvsMF+m9t15HNLMipppzkC+Y2Yq+v3SonZyU70RBL/h1gxPkH08Ot8pEE9Z4Kd+czyWJClmFS8qzIP9OZ04Q=="
+  "resolved" "https://registry.npmjs.org/babel-loader/-/babel-loader-8.3.0.tgz"
+  "version" "8.3.0"
   dependencies:
     "find-cache-dir" "^3.3.1"
-    "loader-utils" "^1.4.0"
+    "loader-utils" "^2.0.0"
     "make-dir" "^3.1.0"
     "schema-utils" "^2.6.5"
 
@@ -4510,19 +4505,10 @@
   "resolved" "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
   "version" "1.0.1"
 
-"json5@^1.0.1":
-  "integrity" "sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow=="
-  "resolved" "https://registry.npmjs.org/json5/-/json5-1.0.1.tgz"
-  "version" "1.0.1"
-  dependencies:
-    "minimist" "^1.2.0"
-
-"json5@^2.1.2", "json5@2.2.0":
-  "integrity" "sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA=="
-  "resolved" "https://registry.npmjs.org/json5/-/json5-2.2.0.tgz"
-  "version" "2.2.0"
-  dependencies:
-    "minimist" "^1.2.5"
+"json5@^2.1.2", "json5@^2.2.0", "json5@^2.2.2":
+  "integrity" "sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ=="
+  "resolved" "https://registry.npmjs.org/json5/-/json5-2.2.2.tgz"
+  "version" "2.2.2"
 
 "jsonfile@^6.0.1":
   "integrity" "sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ=="
@@ -4597,14 +4583,14 @@
   "resolved" "https://registry.npmjs.org/loader-runner/-/loader-runner-4.2.0.tgz"
   "version" "4.2.0"
 
-"loader-utils@^1.4.0":
-  "integrity" "sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA=="
-  "resolved" "https://registry.npmjs.org/loader-utils/-/loader-utils-1.4.0.tgz"
-  "version" "1.4.0"
+"loader-utils@^2.0.0":
+  "integrity" "sha512-xXqpXoINfFhgua9xiqD8fPFHgkoq1mmmpE92WlDbm9rNRd/EbRb+Gqf908T2DMfuHjjJlksiK2RbHVOdD/MqSw=="
+  "resolved" "https://registry.npmjs.org/loader-utils/-/loader-utils-2.0.4.tgz"
+  "version" "2.0.4"
   dependencies:
     "big.js" "^5.2.2"
     "emojis-list" "^3.0.0"
-    "json5" "^1.0.1"
+    "json5" "^2.1.2"
 
 "locate-path@^2.0.0":
   "integrity" "sha512-NCI2kiDkyR7VeEKm27Kda/iQHyKJe1Bu0FlTbYp3CqJu+9IFe9bLyAjMxf5ZDDbEg+iMPzB5zYyUTSm8wVTKmA=="
@@ -4766,7 +4752,7 @@
   dependencies:
     "brace-expansion" "^1.1.7"
 
-"minimist@^1.2.0", "minimist@^1.2.5", "minimist@1.2.6":
+"minimist@^1.2.0", "minimist@1.2.6":
   "integrity" "sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q=="
   "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
   "version" "1.2.6"
@@ -5064,8 +5050,7 @@
     "lines-and-columns" "^1.1.6"
 
 "parse-srcset@github:ikatyang/parse-srcset#master":
-  "integrity" "sha512-4YYGS6pHWxOjjFG2/iZY3Ye5z5uz2AgWaYQjQT6Kagd4fQhgClZoZwONgC5WtHOlSyWySBiRjjep5btcscv+dg=="
-  "resolved" "https://codeload.github.com/ikatyang/parse-srcset/tar.gz/03104fe7a2cdfd898e3717fef402fce528740370"
+  "resolved" "git+ssh://git@github.com/ikatyang/parse-srcset.git#03104fe7a2cdfd898e3717fef402fce528740370"
   "version" "1.0.2"
 
 "parse5@6.0.1":
@@ -6126,12 +6111,11 @@
   "version" "1.0.5"
 
 "tsconfig-paths@^3.9.0":
-  "integrity" "sha512-dRcuzokWhajtZWkQsDVKbWyY+jgcLC5sqJhg2PSgf4ZkH2aHPvaOY8YWGhmjb68b5qqTfasSsDO9k7RUiEmZAw=="
-  "resolved" "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.9.0.tgz"
-  "version" "3.9.0"
+  "integrity" "sha512-rETidPDgCpltxF7MjBZlAFPUHv5aHH2MymyPvh+vEyWAED4Eb/WeMbsnD/JDr4OKPOA1TssDHgIcpTN5Kh0p6Q=="
+  "resolved" "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.10.1.tgz"
+  "version" "3.10.1"
   dependencies:
-    "@types/json5" "^0.0.29"
-    "json5" "^1.0.1"
+    "json5" "^2.2.0"
     "minimist" "^1.2.0"
     "strip-bom" "^3.0.0"
 
