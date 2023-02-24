@@ -26,6 +26,9 @@ jobs:
         id: version-bump
         uses: "phips28/gh-action-bump-version@master"
         with:
+          default: prerelease
+          preid: utily
+          rc-wording: ""
           tag-prefix: 'utily-'
         env:
           GITHUB_TOKEN: ${{ secrets.ADMIN_TOKEN }}
