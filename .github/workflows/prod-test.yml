@@ -15,6 +15,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci: version bump to ')"
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4

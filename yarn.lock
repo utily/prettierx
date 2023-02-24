@@ -2115,7 +2115,7 @@
     "graceful-fs" "^4.2.4"
     "slash" "^3.0.0"
 
-"babel-loader@^8.3.0":
+"babel-loader@8.3.0":
   "integrity" "sha512-H8SvsMF+m9t15HNLMipppzkC+Y2Yq+v3SonZyU70RBL/h1gxPkH08Ot8pEE9Z4Kd+czyWJClmFS8qzIP9OZ04Q=="
   "resolved" "https://registry.npmjs.org/babel-loader/-/babel-loader-8.3.0.tgz"
   "version" "8.3.0"
@@ -4505,7 +4505,7 @@
   "resolved" "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
   "version" "1.0.1"
 
-"json5@^2.1.2", "json5@^2.2.0", "json5@^2.2.2":
+"json5@^2.1.2", "json5@^2.2.0", "json5@2.2.2":
   "integrity" "sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ=="
   "resolved" "https://registry.npmjs.org/json5/-/json5-2.2.2.tgz"
   "version" "2.2.2"
@@ -4745,7 +4745,7 @@
   "resolved" "https://registry.npmjs.org/mimic-fn/-/mimic-fn-3.1.0.tgz"
   "version" "3.1.0"
 
-"minimatch@^3.0.4", "minimatch@^3.1.2":
+"minimatch@^3.0.4", "minimatch@3.1.2":
   "integrity" "sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw=="
   "resolved" "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
   "version" "3.1.2"
@@ -5697,7 +5697,7 @@
   "resolved" "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.3.tgz"
   "version" "1.7.3"
 
-"shelljs@^0.8.5":
+"shelljs@0.8.5":
   "integrity" "sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow=="
   "resolved" "https://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz"
   "version" "0.8.5"
