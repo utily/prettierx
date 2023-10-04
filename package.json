@@ -84,7 +84,7 @@
     "outdent": "0.8.0",
     "parse-srcset": "github:ikatyang/parse-srcset#master",
     "please-upgrade-node": "3.2.0",
-    "postcss": "8.3.5",
+    "postcss": "8.4.31",
     "postcss-less": "4.0.1",
     "postcss-media-query-parser": "0.2.3",
     "postcss-scss": "3.0.2",
@@ -94,7 +94,7 @@
     "remark-footnotes": "2.0.0",
     "remark-math": "3.0.1",
     "resolve": "1.20.0",
-    "semver": "7.3.5",
+    "semver": "^7.5.4",
     "string-width": "4.2.2",
     "strip-ansi": "6.0.0",
     "unicode-regex": "3.0.0",
@@ -151,7 +151,7 @@
     "tempy": "1.0.1",
     "terser-webpack-plugin": "5.1.4",
     "typescript": "4.3.5",
-    "webpack": "5.44.0"
+    "webpack": "^5.88.2"
   },
   "peerDependenciesMeta": {
     "flow-parser": {
